@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "com.movieapp",
     "name": "movie-app",
     "slug": "movie-app",
     "version": "1.0.0",
@@ -22,7 +23,13 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "tsconfigPaths": true
     }
   }
 }
